@@ -5,7 +5,7 @@
  * @version 0.0.1
  */
 
-module.exports = class EscNoSelectionFix {
+module.exports = class DiscordSelectFix {
     handler(e) {
         if (e.key == "Escape")
             document.querySelectorAll('[contenteditable=false]').forEach(el => el.setAttribute("contenteditable", true))
